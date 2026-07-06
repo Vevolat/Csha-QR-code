@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 手机端视口适配核心标签 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>居中适配图片</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            /* 水平+垂直双居中 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f5f5f5;
+        }
+        .img-box {
+            width: 90vw;
+            max-width: 720px;
+        }
+        .img-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="img-box">
+        <img src="1.png" alt="展示图片">
+    </div>
+</body>
+</html>
